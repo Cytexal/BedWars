@@ -1,0 +1,15 @@
+name: BedWars
+main: com.Cytexal.BedWars.Main
+version: 0.1
+description: BedWars 2.0
+depend: [TimoCloud]
+
+commands:
+      BW:
+        usage:
+      BedWars:
+        usage:
+      stats:
+        usage:
+      start:
+        usage:
