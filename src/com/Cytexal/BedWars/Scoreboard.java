@@ -1,16 +1,8 @@
 package com.Cytexal.BedWars;
 
-import java.awt.List;
-import java.sql.SQLException;
-import java.util.ArrayList;
-
-import javax.print.attribute.standard.Sides;
-
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
-import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 
 import com.coloredcarrot.api.sidebar.Sidebar;

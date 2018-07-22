@@ -3,9 +3,7 @@ package com.Cytexal.BedWars;
 import java.util.ArrayList;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.HandlerList;
@@ -111,7 +109,7 @@ public class TeamMenü implements Listener {
 
 	@EventHandler
 	public void Click(InventoryClickEvent e) {
-		if (Main.Teammenüs.get((Player)e.getWhoClicked()).inv == inv) {
+		if (Main.Teammenüs.get(e.getWhoClicked()).inv == inv) {
 
 			if(Bukkit.getOnlinePlayers().size() == 2)
 			{
@@ -160,7 +158,7 @@ public class TeamMenü implements Listener {
 					
 					@Override
 					public void run() {
-						HandlerList.unregisterAll(Main.Teammenüs.get((org.bukkit.entity.Player)e.getWhoClicked()));
+						HandlerList.unregisterAll(Main.Teammenüs.get(e.getWhoClicked()));
 						new TeamMenü((org.bukkit.entity.Player) e.getWhoClicked(), Arena);
 					}
 				},10);
@@ -172,7 +170,7 @@ public class TeamMenü implements Listener {
 				{
 					g.setPlayerListName("§" + Main.Teams.get(g).charAt(1) + g.getName());
 				}
-				HandlerList.unregisterAll(Main.Teammenüs.get((org.bukkit.entity.Player)e.getWhoClicked()));
+				HandlerList.unregisterAll(Main.Teammenüs.get(e.getWhoClicked()));
 			}
 			}
 			}

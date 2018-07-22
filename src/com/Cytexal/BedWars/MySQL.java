@@ -10,8 +10,6 @@ import java.sql.SQLException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import com.mysql.jdbc.PreparedStatement;
-
 public class MySQL {
 
 	private String host;

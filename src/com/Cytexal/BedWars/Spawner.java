@@ -1,6 +1,5 @@
 package com.Cytexal.BedWars;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
 public class Spawner {

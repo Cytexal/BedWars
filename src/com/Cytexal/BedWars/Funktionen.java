@@ -3,13 +3,9 @@ package com.Cytexal.BedWars;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import java.util.UUID;
 
 import org.bukkit.entity.Player;
-import org.bukkit.help.GenericCommandHelpTopic;
 public class Funktionen {
 
 	private Main pl;

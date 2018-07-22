@@ -6,10 +6,8 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/chrisschross129/Desktop/Java-APIs/ActionBarAPI-1.4.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/chrisschross129/Desktop/Java-APIs/SidebarAPI.jar"/>
-	<classpathentry kind="lib" path="C:/Users/chrisschross129/Desktop/Java-APIs/spigot.jar"/>
-	<classpathentry kind="lib" path="C:/Users/chrisschross129/Desktop/Java-APIs/TitleAPI-1.7.4 (1).jar"/>
-	<classpathentry kind="lib" path="C:/Users/chrisschross129/Desktop/Java-APIs/TimoCloud-API-4.1-20170409.125642-2.jar"/>
+	<classpathentry kind="lib" path="Dependencies/ActionBarAPI-1.4.2.jar"/>
+	<classpathentry kind="lib" path="Dependencies/SidebarAPI.jar"/>
+	<classpathentry kind="lib" path="Dependencies/spigot.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

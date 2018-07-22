@@ -1,6 +1,5 @@
 package com.Cytexal.BedWars;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
@@ -8,7 +7,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;

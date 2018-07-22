@@ -1,7 +1,5 @@
 package com.Cytexal.BedWars;
 
-import java.io.File;
-import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,10 +9,8 @@ import java.util.Random;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.block.Block;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -22,8 +18,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.connorlinfoot.actionbarapi.ActionBarAPI;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
-
-import at.TimoCraft.TimoCloud.api.TimoCloudAPI;
 
 public class Main extends JavaPlugin {
 
@@ -66,11 +60,6 @@ public class Main extends JavaPlugin {
 		Teams = new HashMap<>();
 		spawnprot = new ArrayList<>();
 		poss = new ArrayList<>();
-	}
-
-	@Override
-	public void onDisable() {
-		TimoCloudAPI.getBukkitInstance().setState("RESTART");
 	}
 
 	public static Funktionen getFunktion() {
@@ -143,8 +132,6 @@ public class Main extends JavaPlugin {
 		new Funktionen(this);
 		Broadcaster();
 		Main.phase = Phasen.LOBBY;
-		TimoCloudAPI.getBukkitInstance().setState("ONLINE");
-		TimoCloudAPI.getBukkitInstance().setExtra(""+Main.Arena);
 		try {
 			setMaxPlayers(4);
 		} catch (ReflectiveOperationException e) {

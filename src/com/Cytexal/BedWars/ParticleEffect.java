@@ -1159,7 +1159,7 @@ public enum ParticleEffect {
 		 */
 		@Override
 		public float getValueX() {
-			return (float) red / 255F;
+			return red / 255F;
 		}
 
 		/**
@@ -1169,7 +1169,7 @@ public enum ParticleEffect {
 		 */
 		@Override
 		public float getValueY() {
-			return (float) green / 255F;
+			return green / 255F;
 		}
 
 		/**
@@ -1179,7 +1179,7 @@ public enum ParticleEffect {
 		 */
 		@Override
 		public float getValueZ() {
-			return (float) blue / 255F;
+			return blue / 255F;
 		}
 	}
 
@@ -1217,7 +1217,7 @@ public enum ParticleEffect {
 		 */
 		@Override
 		public float getValueX() {
-			return (float) note / 24F;
+			return note / 24F;
 		}
 
 		/**

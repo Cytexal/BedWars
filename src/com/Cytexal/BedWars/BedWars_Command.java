@@ -3,7 +3,6 @@ package com.Cytexal.BedWars;
 import java.util.ArrayList;
 
 import org.bukkit.Bukkit;
-import org.bukkit.GameMode;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -13,6 +12,7 @@ import org.bukkit.entity.Player;
 
 public class BedWars_Command implements CommandExecutor {
 
+	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String lable, String args[]) {
 
 		if (cmd.getName().equalsIgnoreCase("BW") || cmd.getName().equalsIgnoreCase("BedWars")) {

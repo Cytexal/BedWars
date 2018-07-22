@@ -1,17 +1,9 @@
 package com.Cytexal.BedWars;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.HashMap;
-
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.craftbukkit.v1_8_R3.inventory.CraftItemStack;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -49,7 +41,7 @@ public class Utils {
 	}
 	
 	public static ItemStack createPotion(Material m, String name, int ammount,byte Data, ArrayList<String> lore) {
-		ItemStack item = new ItemStack(m, ammount,(short) Data);
+		ItemStack item = new ItemStack(m, ammount,Data);
 		ItemMeta meta = item.getItemMeta();
 		meta.setDisplayName("" + name);
 		item.getData().setData(Data);

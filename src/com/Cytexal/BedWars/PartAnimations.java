@@ -12,6 +12,7 @@ public class PartAnimations {
 			double t = 0;
 			double r = 2;
 			
+			@Override
 			public void run() {
 				
 				t = t + Math.PI/16;
@@ -33,7 +34,8 @@ public class PartAnimations {
 	{
 	 new BukkitRunnable(){
          double t = Math.PI/4;
-         public void run(){
+         @Override
+		public void run(){
                  t = t + 0.1*Math.PI;
                  for (double theta = 0; theta <= 2*Math.PI; theta = theta + Math.PI/32){
                          double x = t*Math.cos(theta);
@@ -65,7 +67,8 @@ public class PartAnimations {
 	{
 		new BukkitRunnable(){
 	         double phi = 0;
-	         public void run(){
+	         @Override
+			public void run(){
 	        	 phi += Math.PI/10;
 	                 for (double theta = 0; theta <= 2*Math.PI; theta += Math.PI/40){
 	                        
@@ -88,7 +91,8 @@ public class PartAnimations {
 	public static void BlutHelix(final Location loc){
         new BukkitRunnable(){
                 double phi = 0;
-                public void run(){
+                @Override
+				public void run(){
                         phi = phi + Math.PI/16;                                 
                         double x, y, z;                
                        
@@ -115,7 +119,8 @@ public class PartAnimations {
 	public static void frostLord(final Player p ,final boolean flying){
         new BukkitRunnable(){
                 double t = 0;
-                public void run(){
+                @Override
+				public void run(){
                         t += + Math.PI/16;                                 
                         double x = 0, y = 0, z = 0;                
                        

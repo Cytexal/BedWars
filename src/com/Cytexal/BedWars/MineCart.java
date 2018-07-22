@@ -18,9 +18,6 @@ import org.bukkit.material.Rails;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
-import com.Cytexal.BedWars.ParticleEffect.ParticleColor;
-import com.Cytexal.BedWars.ParticleEffect.ParticleData;
-
 public class MineCart implements Listener{
 	
 	
